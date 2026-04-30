@@ -1,0 +1,40 @@
+Bioactive Compounds,SIMILE Code Link,SMILES,MW,LogP,HBD,HBA,TPSA,Rotatable_Bonds,QED_Score,Pass_MW,Pass_LogP,Pass_HBD,Pass_HBA,Lipinski_Rules_Passed
+Allicin,https://pubchem.ncbi.nlm.nih.gov/compound/65036,C=CCSS(=O)CC=C,162.27899999999997,1.7553,0,2,17.07,5,0.45238899922350456,True,True,True,True,4
+Alliin,https://pubchem.ncbi.nlm.nih.gov/compound/9576089,C=CCS(=O)CC(C(=O)O)N,177.22499999999997,-0.6669999999999991,2,3,80.39,5,0.5458370887986503,True,True,True,True,4
+Andrographolide,https://pubchem.ncbi.nlm.nih.gov/compound/5318517,CC12CCC(C(C1CCC(=C)C2CC=C3C(COC3=O)O)(C)CO)O,350.45500000000004,1.9626000000000001,3,5,86.99000000000001,3,0.4114507349016967,True,True,True,True,4
+Neoandrographolide,https://pubchem.ncbi.nlm.nih.gov/compound/9848024,CC1(CCCC2(C1CCC(=C)C2CCC3=CCOC3=O)C)COC4C(C(C(C(O4)CO)O)O)O,480.5980000000002,1.845200000000001,4,8,125.68000000000002,7,0.3213463977796831,True,True,True,True,4
+Ferulic acid,https://pubchem.ncbi.nlm.nih.gov/compound/445858,COC1=C(C=CC(=C1)C=CC(=O)O)O,194.18599999999998,1.4986,2,3,66.76,3,0.715320210715463,True,True,True,True,4
+Artemisinic acid,https://pubchem.ncbi.nlm.nih.gov/compound/10922465,CC1CCC(C2C1CCC(=C2)C)C(=C)C(=O)O,234.33899999999997,3.645800000000002,1,1,37.3,2,0.5847020496229239,True,True,True,True,4
+Cannabidiol,https://pubchem.ncbi.nlm.nih.gov/compound/644019,CCCCCC1=CC(=C(C(=C1)O)C2C=C(CCC2C(=C)C)C)O,314.46900000000005,5.846500000000007,2,2,40.46,6,0.5107748679217476,True,False,True,True,3
+CBDA-O-methyl ester,https://pubchem.ncbi.nlm.nih.gov/compound/11132454,CCCCCC1=CC(=C(C(=C1C(=O)OC)O)C2C=C(CCC2C(=C)C)C)O,372.5050000000002,5.633100000000007,2,4,66.76,7,0.3695243228964065,True,False,True,True,3
+Tetrahydrocannabinolic acid,https://pubchem.ncbi.nlm.nih.gov/compound/3082459,CCCCCC1=CC(=C2C3C=C(C=CC3C(OC2(C1)C(=O)O)(C)C)C)O,358.4780000000001,5.089600000000004,2,3,66.76,5,0.6718746313689528,True,False,True,True,3
+Capsanthin,https://pubchem.ncbi.nlm.nih.gov/compound/5281228,CC1=C(C(CC(C1)O)(C)C)C=CC(=CC=CC(=CC=CC=C(C)C=CC=C(C)C=CC(=O)C2(CC(CC2(C)C)O)C)C)C,584.8850000000003,9.806299999999997,2,3,57.53,11,0.1876815820421996,False,False,True,True,2
+Capsaicin,https://pubchem.ncbi.nlm.nih.gov/compound/1548943,CC(C)C=CCCCCC(=O)NCC1=CC(=C(C=C1)O)OC,305.41800000000006,3.789600000000002,2,3,58.56,9,0.5388605597174689,True,True,True,True,4
+Hydroxysafflor yellow A,https://pubchem.ncbi.nlm.nih.gov/compound/49798103,C1=CC(=CC=C1C=CC(=C2C(=C(C(=O)C(C2=O)(C3C(C(C(C(O3)CO)O)O)O)O)C4C(C(C(C(O4)CO)O)O)O)O)O)O,612.5370000000005,-4.402699999999994,12,16,295.35999999999996,6,0.08197381813235688,False,True,False,False,1
+Asiatic acid,https://pubchem.ncbi.nlm.nih.gov/compound/119034,CC1CCC2(CCC3(C(=CCC4C3(CCC5C4(CC(C(C5(C)CO)O)O)C)C)C2C1C)C)C(=O)O,488.70900000000023,5.032700000000005,4,4,97.99,2,0.4086913598374133,True,False,True,True,3
+DPHD,https://pubchem.ncbi.nlm.nih.gov/compound/44560847,C1=CC=C(C=C1)CCC(C=CC=CC2=CC=CC=C2)O,264.368,4.249700000000005,1,1,20.23,6,0.773285808676253,True,True,True,True,4
+Bisacurone,https://pubchem.ncbi.nlm.nih.gov/compound/14287397,CC(CC(=O)C=C(C)C)C1CC(C(C=C1)(C)O)O,252.35399999999998,2.235900000000001,2,3,57.53,4,0.5956730385352066,True,True,True,True,4
+Curcumin,https://pubchem.ncbi.nlm.nih.gov/compound/969516,COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O,368.38500000000005,3.3699000000000026,2,6,93.06000000000002,8,0.5481228320623275,True,True,True,True,4
+Kaempferol,https://pubchem.ncbi.nlm.nih.gov/compound/5280863,C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O,286.239,2.282400000000001,4,6,111.13000000000001,1,0.5458513994143424,True,True,True,True,4
+Quercetin,https://pubchem.ncbi.nlm.nih.gov/compound/5280343,C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O,302.238,1.9880000000000009,5,7,131.36,1,0.43419044029909815,True,True,True,True,4
+Naringenin,https://pubchem.ncbi.nlm.nih.gov/compound/439246,C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O,272.256,2.5099000000000022,3,5,86.99000000000001,1,0.7421139126791213,True,True,True,True,4
+Baicalein,https://pubchem.ncbi.nlm.nih.gov/compound/5281605,C1=CC=C(C=C1)C2=CC(=O)C3=C(O2)C=C(C(=C3O)O)O,270.23999999999995,2.576800000000001,3,5,90.9,1,0.5910546660911951,True,True,True,True,4
+Gypensapogenin A,https://pubchem.ncbi.nlm.nih.gov/compound/57403926,CC(=C1CC=C(C1=O)C2CCC3(C2CCC4C3(CCC5=C4C6CCC(C5(C)C)O6)C)C)C,434.6640000000002,7.348600000000008,0,2,26.3,1,0.31845720992086873,True,False,True,True,3
+Delphinidin-3-sambubioside,https://pubchem.ncbi.nlm.nih.gov/compound/10196837,C1C(C(C(C(O1)OC2C(C(C(OC2OC3=CC4=C(C=C(C=C4[O+]=C3C5=CC(=C(C(=C5)O)O)O)O)O)CO)O)O)O)O)O,597.5020000000006,-1.4491000000000003,11,15,270.74999999999994,6,0.11454988290956389,False,True,False,False,1
+Delphinidin-3-O-glucoside,https://pubchem.ncbi.nlm.nih.gov/compound/165558,C1=C(C=C(C(=C1O)O)O)C2=[O+]C3=CC(=CC(=C3C=C2OC4C(C(C(C(O4)CO)O)O)O)O)O.[Cl-],500.84000000000015,-2.908399999999998,9,11,211.82999999999996,4,0.13023618760473227,False,True,False,False,1
+Chlorogenic acid,https://pubchem.ncbi.nlm.nih.gov/compound/1794427,C1C(C(C(CC1(C(=O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O,354.31100000000004,-0.6459000000000001,6,8,164.75,4,0.2340852797608433,True,True,False,True,3
+Neochlorogenic acid,https://pubchem.ncbi.nlm.nih.gov/compound/5280633,C1C(C(C(CC1(C(=O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O,354.31100000000004,-0.6459000000000001,6,8,164.75,4,0.2340852797608433,True,True,False,True,3
+Cryptochlorogenic acid,https://pubchem.ncbi.nlm.nih.gov/compound/9798666,C1C(C(C(CC1(C(=O)O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O,354.31100000000004,-0.6458999999999999,6,8,164.75,4,0.2340852797608433,True,True,False,True,3
+Mulberroside A,https://pubchem.ncbi.nlm.nih.gov/compound/6443484,C1=CC(=C(C=C1OC2C(C(C(C(O2)CO)O)O)O)O)C=CC3=CC(=CC(=C3)OC4C(C(C(C(O4)CO)O)O)O)O,568.5280000000005,-2.374399999999999,10,14,239.21999999999994,8,0.14978057762863536,False,True,False,False,1
+Oxyresveratrol,https://pubchem.ncbi.nlm.nih.gov/compound/5281717,C1=CC(=C(C=C1O)O)C=CC2=CC(=CC(=C2)O)O,244.24599999999998,2.679400000000002,4,4,80.92,2,0.6121183100624944,True,True,True,True,4
+Meso-dihydroguaiaretic acid,https://pubchem.ncbi.nlm.nih.gov/compound/476856,CC(CC1=CC(=C(C=C1)O)OC)C(C)CC2=CC(=C(C=C2)O)OC,330.42400000000004,4.172400000000004,2,4,58.92,7,0.799677329311498,True,True,True,True,4
+Nuciferine,https://pubchem.ncbi.nlm.nih.gov/compound/10146,CN1CCC2=CC(=C(C3=C2C1CC4=CC=CC=C43)OC)OC,295.38200000000006,3.4559000000000015,0,3,21.700000000000003,2,0.846722239426992,True,True,True,True,4
+Thymoquinone,https://pubchem.ncbi.nlm.nih.gov/compound/10281,CC1=CC(=O)C(=CC1=O)C(C)C,164.20399999999998,1.6669,0,2,34.14,1,0.5522549586177093,True,True,True,True,4
+Eugenol,https://pubchem.ncbi.nlm.nih.gov/compound/3314,COC1=C(C=CC(=C1)CC=C)O,164.20399999999998,2.1293,1,2,29.46,3,0.6932796632293877,True,True,True,True,4
+Piperine,https://pubchem.ncbi.nlm.nih.gov/compound/638024,C1CCN(CC1)C(=O)C=CC=CC2=CC3=C(C=C2)OCO3,285.3430000000001,2.997200000000001,0,3,38.77,3,0.632788302073214,True,True,True,True,4
+Lupeol,https://pubchem.ncbi.nlm.nih.gov/compound/259846,CC(=C)C1CCC2(C1C3CCC4C5(CCC(C(C5CCC4(C3(CC2)C)C)(C)C)O)C)C,426.72900000000027,8.02480000000001,1,1,20.23,1,0.42072234296543964,True,False,True,True,3
+Rhinacanthin-C,https://pubchem.ncbi.nlm.nih.gov/compound/6474554,CC=C(C)CCC=C(C)C(=O)OCC(C)(C)CC1=C(C2=CC=CC=C2C(=O)C1=O)O,410.5100000000001,5.373300000000005,1,5,80.67,8,0.2695259131517319,True,False,True,True,3
+6-gingerol,https://pubchem.ncbi.nlm.nih.gov/compound/442793,CCCCCC(CC(=O)CCC1=CC(=C(C=C1)O)OC)O,294.391,3.233800000000002,2,4,66.76,10,0.6501296660848443,True,True,True,True,4
+10-Dehydrogingerdione,https://pubchem.ncbi.nlm.nih.gov/compound/5316450,CCCCCCCCCC(=O)C=C(C=CC1=CC(=C(C=C1)O)OC)O,346.46700000000004,5.565700000000007,2,4,66.76,12,0.22476916712525968,True,False,True,True,3
+ZT-dial,https://pubchem.ncbi.nlm.nih.gov/compound/6439042,CC1(CCCC2(C1CCC3(C2CC=C(CC=O)C=O)CO3)C)C,318.4570000000001,4.102400000000003,0,3,46.67,5,0.4353640467217515,True,True,True,True,4
+Zerumbone,https://pubchem.ncbi.nlm.nih.gov/compound/5470187,CC1=CCC(C=CC(=O)C(=CCC1)C)(C)C,218.33999999999995,4.214400000000004,0,1,17.07,0,0.5564389339227103,True,True,True,True,4
