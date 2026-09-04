@@ -36,14 +36,21 @@ TEXT_POSITION = {
     'single_name_y': 1.08,      # Y position of compound name (when plant is absent)
 }
 
+# ============================================================================
+# MOLECULE CONFIG - ปรับความหนาของเส้นพันธะและขนาดตัวอักษรของอะตอมในโมเลกุล
+# ============================================================================
+MOLECULE_CONFIG = {
+    'bond_line_width': 5.0,     # ความหนาของเส้นโมเลกุล (แนะนำ: 3.5 - 5.0 ยิ่งมากยิ่งหนาเข้ม)
+    'atom_label_min_font': 30,  # ขนาดตัวอักษรของอะตอม (เช่น OH, O, N) ให้หนาและชัดสมส่วนกับเส้น
+}
+
 FIGURE_CONFIG = {
     'n_cols': 5,                # Number of columns in grid
     'col_width_inch': 3.2,      # Width per grid cell in inches (DO NOT ADJUST PLOT SIZE)
     'row_height_inch': 2.8,     # Height per grid cell in inches
     'mol_img_width': 1000,      # RDKit drawing canvas width (pixels) - prevents blurriness
     'mol_img_height': 750,      # RDKit drawing canvas height (pixels)
-    'bond_line_width': 2.2,     # Bond stroke width for sharp chemical lines
-    'dpi': 600,                 # Output PNG resolution (300 DPI publication standard)
+    'dpi': 600,                 # Output PNG resolution (600 DPI publication standard)
     'out_path': 'bioactive_structures.png',
 }
 
@@ -87,7 +94,9 @@ def mol_to_pil(mol, width=FIGURE_CONFIG['mol_img_width'], height=FIGURE_CONFIG['
     drawer = rdMolDraw2D.MolDraw2DCairo(width, height)
     opts = drawer.drawOptions()
     opts.addStereoAnnotation = True
-    opts.bondLineWidth = FIGURE_CONFIG['bond_line_width']
+    opts.bondLineWidth = MOLECULE_CONFIG['bond_line_width']
+    if MOLECULE_CONFIG.get('atom_label_min_font', 0) > 0:
+        opts.minFontSize = MOLECULE_CONFIG['atom_label_min_font']
     drawer.DrawMolecule(mol)
     drawer.FinishDrawing()
     bio = BytesIO(drawer.GetDrawingText())

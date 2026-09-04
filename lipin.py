@@ -2,11 +2,21 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import seaborn as sns
 import pandas as pd
+import numpy as np
 
 TABLE3_FILE = 'Bioactive_Analysis_Full.csv'
 SORTED_TABLE3_FILE = 'Bioactive_Analysis_Full_Lipinski_Sorted.csv'
 COMPOUND_COLUMN = 'Bioactive Compounds'
 RULES_PASSED_COLUMN = 'Lipinski_Rules_Passed'
+
+# Histogram bin-width configuration. Adjust these values to change the width
+# of each numeric histogram bin (in the unit used by that measurement).
+BIN_WIDTHS = {
+    'MW': 25,
+    'LogP': 1,
+    'HBA': 1,
+    'HBD': 1,
+}
 
 # Table 3 is ordered from the highest to the lowest number of Lipinski rules
 # passed. Compound names are alphabetized within each group for easy lookup.
@@ -60,8 +70,19 @@ def add_panel_label(ax, letter, x=0.95, ha='right'):
             bbox=dict(boxstyle='round,pad=0.15', facecolor=label_bg,
                       edgecolor='none', alpha=0.85))
 
+
+def bins_for(data, width):
+    """Return bin edges aligned to multiples of a chosen bin width."""
+    if width <= 0:
+        raise ValueError('Histogram bin widths must be greater than zero.')
+
+    start = np.floor(data.min() / width) * width
+    end = np.ceil(data.max() / width) * width
+    return np.arange(start, end + width, width)
+
 # --- Panel A: Molecular Weight ---
-ax_A.hist(df_final['MW'].dropna(), bins=20, color=bar_color, edgecolor='white', linewidth=0.6)
+mw = df_final['MW'].dropna()
+ax_A.hist(mw, bins=bins_for(mw, BIN_WIDTHS['MW']), color=bar_color, edgecolor='white', linewidth=0.6)
 ax_A.axvline(500, color=ref_color, linewidth=1.8, linestyle='--', label='MW = 500')
 ax_A.set_xlabel('Molecular weight (MW)', fontweight='semibold')
 ax_A.set_ylabel('Number of compounds', fontweight='semibold')
@@ -69,7 +90,8 @@ add_panel_label(ax_A, 'A')
 sns.despine(ax=ax_A)
 
 # --- Panel B: LogP ---
-ax_B.hist(df_final['LogP'].dropna(), bins=15, color=bar_color, edgecolor='white', linewidth=0.6)
+logp = df_final['LogP'].dropna()
+ax_B.hist(logp, bins=bins_for(logp, BIN_WIDTHS['LogP']), color=bar_color, edgecolor='white', linewidth=0.6)
 ax_B.axvline(5, color=ref_color, linewidth=1.8, linestyle='--', label='LogP = 5')
 ax_B.set_xlabel('Partition coefficient (LogP)', fontweight='semibold')
 ax_B.set_ylabel('Number of compounds', fontweight='semibold')
@@ -77,7 +99,8 @@ add_panel_label(ax_B, 'B')
 sns.despine(ax=ax_B)
 
 # --- Panel C: Hydrogen Bond Acceptors ---
-ax_C.hist(df_final['HBA'].dropna(), bins=20, color=bar_color, edgecolor='white', linewidth=0.6)
+hba = df_final['HBA'].dropna()
+ax_C.hist(hba, bins=bins_for(hba, BIN_WIDTHS['HBA']), color=bar_color, edgecolor='white', linewidth=0.6)
 ax_C.axvline(10, color=ref_color, linewidth=1.8, linestyle='--', label='HBA = 10')
 ax_C.set_xlabel('Hydrogen bond acceptors (HBAs)', fontweight='semibold')
 ax_C.set_ylabel('Number of compounds', fontweight='semibold')
@@ -85,7 +108,8 @@ add_panel_label(ax_C, 'C')
 sns.despine(ax=ax_C)
 
 # --- Panel D: Hydrogen Bond Donors ---
-ax_D.hist(df_final['HBD'].dropna(), bins=20, color=bar_color, edgecolor='white', linewidth=0.6)
+hbd = df_final['HBD'].dropna()
+ax_D.hist(hbd, bins=bins_for(hbd, BIN_WIDTHS['HBD']), color=bar_color, edgecolor='white', linewidth=0.6)
 ax_D.axvline(5, color=ref_color, linewidth=1.8, linestyle='--', label='HBD = 5')
 ax_D.set_xlabel('Hydrogen bond donors (HBDs)', fontweight='semibold')
 ax_D.set_ylabel('Number of compounds', fontweight='semibold')
@@ -109,7 +133,6 @@ add_panel_label(ax_E, 'E', x=0.02, ha='left')
 sns.despine(ax=ax_E)
 
 plt.savefig('Bioactive_Analysis_Charts_Fixed.png', dpi=800, bbox_inches='tight')
-plt.show()
 
 print(
     "Table 3 sorted by Lipinski rules passed and saved as "
